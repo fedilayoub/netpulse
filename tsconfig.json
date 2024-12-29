@@ -6,14 +6,20 @@
   "include": [
     ".plasmo/index.d.ts",
     "./**/*.ts",
-    "./**/*.tsx"
-  ],
+    "./**/*.tsx",
+    ".next/types/**/*.ts"
+, "tailwind.config.js"  ],
   "compilerOptions": {
     "paths": {
-      "~*": [
+      "@/*": [
         "./*"
       ]
     },
-    "baseUrl": "."
+    "baseUrl": ".",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   }
 }
